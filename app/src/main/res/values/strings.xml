@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">多目的トイレ</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_information">InformationActivity</string>
+    <string name="title_activity_attribute">AttributeActivity</string>
+    <string name="title_activity_attribute_toilet">Attribute_toilet</string>
+    <string name="title_activity_list">ListActivity</string>
+    <string name="input">InputFormActivity</string>
+
+    <!-- 以下アクションバーについて -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

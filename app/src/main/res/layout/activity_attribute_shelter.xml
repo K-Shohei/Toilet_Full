@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#0B0B61">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textColor="#FFFFFF"
+            android:text="ユーザー設定"
+            android:textSize="40dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="避難所を検索するための設定を行います。"
+            android:textSize="24dp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="50dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#b3daff"
+                android:gravity="center"
+                android:text="避難者の特性"
+                android:textSize="36dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:text="1. あなたの特性を選択してください"
+            android:textSize="28dp" />
+
+        <RadioGroup
+            android:id="@+id/R1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:orientation="vertical"
+            android:paddingLeft="50dp">
+
+            <RadioButton
+                android:id="@+id/R1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="高齢者"
+                android:textSize="24dp" />
+
+            <RadioButton
+                android:id="@+id/R1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="身体障害者"
+                android:textSize="24dp" />
+
+            <RadioButton
+                android:id="@+id/R1_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="精神障害者"
+                android:textSize="24dp" />
+
+            <RadioButton
+                android:id="@+id/R1_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="知的障害者"
+                android:textSize="24dp" />
+            <RadioButton
+                android:id="@+id/R1_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="知的障害児"
+                android:textSize="24dp" />
+
+            <RadioButton
+                android:id="@+id/R1_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="発達障害者"
+                android:textSize="24dp" />
+
+            <RadioButton
+                android:id="@+id/R1_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="発達障害児"
+                android:textSize="24dp" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="50dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#b3daff"
+                android:gravity="center"
+                android:text="食事について"
+                android:textSize="36dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:text="2. 食事の提供を希望しますか？"
+            android:textSize="28dp" />
+
+        <RadioGroup
+            android:id="@+id/R2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/R2_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:paddingRight="40dp"
+                android:text="希望する"
+                android:textSize="24dp" />
+
+            <RadioButton
+                android:id="@+id/R2_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="40dp"
+                android:text="希望しない"
+                android:textSize="24dp" />
+
+            <RadioButton
+                android:id="@+id/R2_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="どちらでもよい"
+                android:textSize="24dp" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:text="● 特別食が必要な場合は選択して下さい。"
+            android:textSize="28dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/C2_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="60dp"
+                    android:text="かゆ食"
+                    android:textSize="24dp" />
+                <CheckBox
+                    android:id="@+id/C2_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="60dp"
+                    android:text="流動食"
+                    android:textSize="24dp" />
+                <CheckBox
+                    android:id="@+id/C2_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="きざみ食"
+                    android:textSize="24dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/C2_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="60dp"
+                    android:text="ミキサー食"
+                    android:textSize="24dp" />
+                <CheckBox
+                    android:id="@+id/C2_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="60dp"
+                    android:text="糖尿病食"
+                    android:textSize="24dp" />
+                <CheckBox
+                    android:id="@+id/C2_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="減塩食"
+                    android:textSize="24dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/C2_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="60dp"
+                    android:text="軟野菜"
+                    android:textSize="24dp" />
+                <CheckBox
+                    android:id="@+id/C2_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="60dp"
+                    android:text="人口濃厚流動食（経口摂取）"
+                    android:textSize="24dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/FA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="50dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#b3daff"
+                android:gravity="center"
+                android:text="施設として保有する備品"
+                android:textSize="36dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:text="3. 必要な備品を選択してください。"
+            android:textSize="28dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/C3_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="40dp"
+                    android:text="自家発電機"
+                    android:textSize="24dp" />
+                <CheckBox
+                    android:id="@+id/C3_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="40dp"
+                    android:text="たん吸引器"
+                    android:textSize="24dp" />
+                <CheckBox
+                    android:id="@+id/C3_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="吸入器（ネプライザー）"
+                    android:textSize="24dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="50dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#b3daff"
+                android:gravity="center"
+                android:text="避難者が利用できる設備"
+                android:textSize="36dp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:text="4. 必要な設備を選択してください。"
+            android:textSize="28dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="left"
+            android:paddingLeft="50dp">
+            <CheckBox
+                android:id="@+id/C4_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="20dp"
+                android:text="車いすでの敷地内移動"
+                android:textSize="24dp" />
+            <CheckBox
+                android:id="@+id/C4_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="20dp"
+                android:text="車いす対応トイレ"
+                android:textSize="24dp" />
+            <CheckBox
+                android:id="@+id/C4_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="障害者の個室対応（認知症）"
+                android:textSize="24dp" />
+            <CheckBox
+                android:id="@+id/C4_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="20dp"
+                android:text="障害者の個室対応（自閉症）"
+                android:textSize="24dp" />
+            <CheckBox
+                android:id="@+id/C4_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="障害者の個室対応（精神疾患）"
+                android:textSize="24dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="50dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#b3daff"
+                android:gravity="center"
+                android:text="避難者が利用できる備品"
+                android:textSize="36dp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:text="5. 必要な備品を選択してください。"
+            android:textSize="28dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="left"
+            android:paddingLeft="50dp">
+            <CheckBox
+                android:id="@+id/C5_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="20dp"
+                android:text="エアーマット"
+                android:textSize="24dp" />
+            <CheckBox
+                android:id="@+id/C5_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="20dp"
+                android:text="ギャッジ機能のあるベッド"
+                android:textSize="24dp" />
+            <CheckBox
+                android:id="@+id/C5_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="尿器（尿瓶）"
+                android:textSize="24dp" />
+            <CheckBox
+                android:id="@+id/C5_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="20dp"
+                android:text="ポータブルトイレ"
+                android:textSize="24dp" />
+            <CheckBox
+                android:id="@+id/C5_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="車いす"
+                android:textSize="24dp" />
+            <CheckBox
+                android:id="@+id/C5_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="歩行器"
+                android:textSize="24dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="50dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#b3daff"
+                android:gravity="center"
+                android:text="避難者に対応できる行為"
+                android:textSize="36dp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:text="6. 必要な介助行為を選択してください。"
+            android:textSize="28dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="left"
+            android:paddingLeft="50dp">
+            <CheckBox
+                android:id="@+id/C6_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="20dp"
+                android:text="食事・排泄等介助"
+                android:textSize="24dp" />
+            <CheckBox
+                android:id="@+id/C6_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="20dp"
+                android:text="在宅酸素"
+                android:textSize="24dp" />
+            <CheckBox
+                android:id="@+id/C6_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="インシュリン注射"
+                android:textSize="24dp" />
+            <CheckBox
+                android:id="@+id/C6_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="20dp"
+                android:text="たん吸引"
+                android:textSize="24dp" />
+            <CheckBox
+                android:id="@+id/C6_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="導尿"
+                android:textSize="24dp" />
+            <CheckBox
+                android:id="@+id/C6_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="胃ろう・鼻腔注入"
+                android:textSize="24dp" />
+            <CheckBox
+                android:id="@+id/C6_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="手話対応（日常会話）"
+                android:textSize="24dp" />
+            <CheckBox
+                android:id="@+id/C6_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="トイレ誘導等施設内移動の介助"
+                android:textSize="24dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="50dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="30dp">
+            <Button
+                android:id="@+id/attribute_button"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:text="入力完了"
+                android:textSize="28dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

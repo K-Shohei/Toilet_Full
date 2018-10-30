@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Button1"
+        android:title="近い順"></item>
+    <item
+        android:id="@+id/Button2"
+        android:title="属性マッチング"></item>
+    <item
+        android:id="@+id/Button3"
+        android:title="ホーム"></item>
+    <item
+        android:id="@+id/Button4"
+        android:title="ユーザー設定"></item>
+
+
+</menu>

@@ -1,0 +1,309 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/infoac"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.multipurposetoilet.multipurposetoilet.InformationActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/inflate_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="タイトル"
+                android:textSize="36dp" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="33dp"
+                android:layout_weight="1"
+                android:text="住所： "
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:text="電話番号： "
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/a_date"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:text="利用可能日： "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:text="利用可能開始時間： "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/time_end"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:text="利用可能終了時間 : "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/level"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:text="設置している階層 : "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/pictureTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="33dp"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="24dp" />
+
+            <!--<ImageView-->
+                <!--android:id="@+id/imageView1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_alignParentEnd="false"-->
+                <!--android:layout_alignParentStart="false"-->
+                <!--android:layout_below="@+id/libekou"-->
+                <!--android:layout_weight="1"-->
+                <!--android:adjustViewBounds="true"-->
+                <!--android:contentDescription=""-->
+                <!--android:scaleType="fitStart"-->
+                <!--android:src="@drawable/id1"-->
+                <!--tools:ignore="ObsoleteLayoutParam" />-->
+
+            <ImageView
+                android:id="@+id/customview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentStart="false"
+                android:layout_below="@+id/libekou"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:contentDescription=""
+                android:scaleType="fitStart"
+                tools:ignore="ObsoleteLayoutParam" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="33dp"
+                android:layout_weight="1"
+                android:text="【トイレの情報】"
+                android:textSize="24dp" />
+            <TableLayout
+                android:id="@+id/info1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp">
+            </TableLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:text="【周辺の情報】"
+                android:textSize="24dp" />
+            <TableLayout
+                android:id="@+id/info2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp">
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:text="【付加情報】"
+                android:textSize="24dp" />
+            <TableLayout
+                android:id="@+id/info3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp">
+            </TableLayout>
+
+            <!--
+                     android:layout_alignParentStart="true"
+                    android:layout_below="@+id/imageView1"
+                    android:layout_marginTop="33dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"-->
+
+            <!--<TableLayout-->
+                <!--android:id="@+id/info2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:layout_below="@+id/imageView1"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical">-->
+
+            <!--</TableLayout>-->
+
+
+            <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingTop="30dp"-->
+                <!--android:paddingLeft="30dp"-->
+                <!--android:paddingRight="30dp">-->
+                <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="更新日時：　"-->
+                    <!--android:textSize="20dp"-->
+                    <!--android:layout_gravity="right"-->
+                    <!--android:layout_weight="2"/>-->
+
+                <!--<LinearLayout-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="3">-->
+                    <!--<LinearLayout-->
+                        <!--android:orientation="vertical"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content">-->
+                            <!--<TextView-->
+                                <!--android:id="@+id/U_date"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:text="更新はありません"-->
+                                <!--android:textSize="20dp"-->
+                                <!--android:layout_gravity="right"/>-->
+                            <!--<TextView-->
+                                <!--android:id="@+id/U_time"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:text=""-->
+                                <!--android:textSize="20dp"-->
+                                <!--android:layout_gravity="right"/>-->
+                    <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/editButton"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="right"-->
+                    <!--android:layout_marginTop="33dp"-->
+                    <!--android:text="情報を更新"-->
+                    <!--android:layout_weight="2"/>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/reservationButton"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="120dp"-->
+                <!--android:layout_marginTop="40dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:adjustViewBounds="true"-->
+                <!--android:scaleType="fitXY"-->
+                <!--android:background="@drawable/reservationbutton1"-->
+                <!--android:src="@drawable/reservationbutton_color" />-->
+            <!--<TextView-->
+                <!--android:id="@+id/reserve"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="0人が予約しています"-->
+                <!--android:textSize="20dp"-->
+                <!--android:layout_gravity="center"/>-->
+
+            <ImageButton
+                android:id="@+id/mapButton"
+                android:layout_width="wrap_content"
+                android:layout_height="105dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:background="@drawable/mapbutton1"
+                android:src="@drawable/mapbutton_color" />
+
+            <ImageButton
+                android:id="@+id/topButton"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:background="@drawable/topbutton"
+                android:src="@drawable/topbutton" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>
